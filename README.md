@@ -2,7 +2,7 @@
 Enable device GPS programatically.
 
 <p align="center">
-  <img src="https://github.com/MuthuHere/EnableGPS/blob/master/ss.png" width="350" height="500" title="hover text">
+  <img src="https://github.com/MuthuHere/EnableGPS/blob/master/ss.png" width="350" height="550" title="hover text">
 </p>
 
 
