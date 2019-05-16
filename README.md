@@ -1,8 +1,9 @@
 # EnableGPS
 Enable device GPS programatically.
 
-![alt text](https://github.com/MuthuHere/EnableGPS/blob/master/ss.png)
-
+<p align="center">
+  <img src="https://github.com/MuthuHere/EnableGPS/blob/master/ss.png" width="350" height="500" title="hover text">
+</p>
 
 
 ## Installation
