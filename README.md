@@ -1,6 +1,8 @@
 # EnableGPS
 Enable device GPS programatically.
 
+## Installation
+
 ### If you are using Gradle
 
 Step 1. Add the JitPack repository to your build file
