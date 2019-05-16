@@ -29,9 +29,16 @@ Step 2. Add the dependency
 Step 3. In your MainActivity.kt  implement my interface 
          
       class MainActivity : AppCompatActivity(), EnableMyGps.GpsStatusCallBack {
-              ...
-              
-          override fun onGpsSettingStatus(enabled: Boolean) {
+      	 lateinit var gpsStatus: EnableMyGps
+	 override fun onCreate(savedInstanceState: Bundle?) {
+	 		...
+	    //initialize		
+	    gpsStatus = EnableMyGps(this)
+	    // check whether gps is on, if not, request will be happen beyond your class
+       	    gpsStatus.checkMyGpsStatus()
+        }      
+         
+	override fun onGpsSettingStatus(enabled: Boolean) {
              when (enabled) {
                 true -> {
                   //enabled success do your positive stuff here
@@ -42,7 +49,7 @@ Step 3. In your MainActivity.kt  implement my interface
              }
           }
 
-         override fun onGpsAlertCanceledByUser() {
+        override fun onGpsAlertCanceledByUser() {
              // cancelled request if needed try request again
           }
      }
